@@ -14,7 +14,24 @@
     
         <link rel="stylesheet" href="css/index.css">
        
-    
+        <style>
+            #new-text {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            font-weight: bold;
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 1;
+            background-color: transparent; /* Set the initial background color as transparent */
+            transition: background-color 0.5s ease-in-out; /* Add a transition for the background-color property */
+            font-family: "Josefin sans";
+            text-align: center;
+        }
+
+        </style>
     </head>
 <body>
     <!-- MAIN CONTENT -->
@@ -81,18 +98,16 @@
 
     <!-- NEW RELEASE -->
 <div class="new-release img text">
-
-
-    <img src="images/album-thumbnail-one.jpg" alt="new-release">
+    <img src="images/macbook.png" alt="new-release">
 <div class="song-details">
-    <div class="song-name">Blinding Lights</div>
-    <div class="singer-name">Arlo Brown Ft. Sza</div>
+    <div class="song-name">Ready to boost your business?</div>
+    <div class="singer-name">You can contact us immediately and at any time!</div>
     <div class="music-player">
-    <div class="play-song">
-        <img src="images/play.png" alt="play" data-song="darkfire" class="hover" >
-       
-        <audio src="music/The-Weeknd-Blinding-Lights-_Lyrics_.ogg" data-audio="darkfire"></audio> <!--LINK AND NAME OF AUDIO YOU WANT TO PLAY-->
-    </div>
+        <a href="https://example.com/your-new-page" target="_blank">
+            <div class="play-song">
+                <img src="images/play.png" alt="play" data-song="darkfire" class="hover">
+            </div>
+        </a>
     <div class="all-songs">
         <a href="songs-one.html" title="All Songs"><i class="gg-arrow-right"></i></a>
     </div>
@@ -105,6 +120,9 @@
 
 
 </div>
+<div id="new-text" class="text">
+    Taking your business from where it is to where you want it to be.
+</div>
 <!-- HEADER -->
 
 
@@ -112,14 +130,13 @@
 
     <div class="navigation-content">
         <div class="navigation-logo hover opacity">
-            <a href="#" class="text">ARLO BROWN</a>
+            <a href="#" class="text">Sociova</a>
          </div>
         <ul class="navigation-ul">
-            <li><a href="index.html" data-text="Home" data-img="images/bg-image-three.jpg">Home</a></li>
-            <li><a href="about-one.html"  data-text="About"  data-img="images/about-img.jpg">About</a></li>
-            <li><a href="songs-one.html" data-text="Songs"  data-img="images/album-thumbnail-nine.jpg">Songs</a></li>
-            <li><a href="blog-one.html"  data-text="Blogs" data-img="images/main-bg-three.jpg">Blogs</a></li>
-            <li><a href="contact-one.html"  data-text="Contact" data-img="images/album-thumbnail-four.jpg">Contact</a></li>
+            <li><a href="index.html" data-text="Home" data-img="https://cdn.discordapp.com/attachments/979474409792360458/1129831472434511892/Screenshot_2023-07-15_at_19.46.50.png">Home</a></li>
+            <li><a href="about-one.html"  data-text="About"  data-img="https://cdn.discordapp.com/attachments/979474409792360458/1129831540550025226/Screenshot_2023-07-15_at_19.47.07.png">About</a></li>
+            <li><a href="blog-one.html"  data-text="Blogs" data-img="https://cdn.discordapp.com/attachments/979474409792360458/1129831613203751032/Screenshot_2023-07-15_at_19.47.23.png">Blogs</a></li>
+            <li><a href="contact-one.html"  data-text="Contact" data-img="https://cdn.discordapp.com/attachments/979474409792360458/1129831680438439976/Screenshot_2023-07-15_at_19.47.40.png">Contact</a></li>
         </ul>
         <div class="navigation-close hover about-close opacity">
             <div class="navigation-close-line"></div>
@@ -158,6 +175,5 @@
     <script src="js/bez.js"></script>
     <script src="js/pace.js"></script>
     <script src="js/index.js"></script>
-
 </body>
 </html>
