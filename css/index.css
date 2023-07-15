@@ -1059,6 +1059,7 @@ CONTACT ONE
 #contact-one #collaboration-mail .circular-text{
    animation: rotate 20s linear infinite;
    position: relative;
+   font-family: "Julius Sans One", sans-serif;
 }
 #contact-one #collaboration-mail .mail{
     position: absolute;
@@ -1067,6 +1068,7 @@ CONTACT ONE
     transform: translate(-50%,0%);
     opacity: .7;
     transition: all .4s ease;
+    font-family: "Julius Sans One", sans-serif;
 }
 #contact-one #collaboration-mail  .mail:hover{
     opacity: 1;
@@ -1308,6 +1310,10 @@ SONGS ONE
      background-position: center;
      background-attachment: fixed;
      background-size: cover;
+}
+
+.songs-two-background{
+    background: url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80");
 }
 
 
