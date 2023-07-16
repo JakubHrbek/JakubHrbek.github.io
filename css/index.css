@@ -845,7 +845,7 @@ SONGS ONE
 }
 
 #songs-one #songs-container .song{
-  height:auto;
+  height: 40vh;
   width: 275px;
   position: relative;
   margin: 40px auto;

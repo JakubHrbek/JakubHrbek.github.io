@@ -16,8 +16,52 @@
        
     
     </head>
+    <style>
+        /* CSS for the glassmorphic button */
+
+        .glassmorphic-button {
+            position: fixed;
+            bottom: 30px;
+            left: 35vw;
+            right: 35vw;
+            transform: translateX(-50%);
+            border-radius: 50px;
+            padding: 12px 30px;
+            background-color: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            font-family: "Josefin sans";
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            text-align: center;
+        }
+
+        .glassmorphic-button a {
+            color: #fff;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            .glassmorphic-button {
+                width: 90%;
+                max-width: 300px;
+            }
+        }
+
+        .glassmorphic-button.show {
+            opacity: 1;
+        }
+        .hidden {
+            opacity: 0;
+            transform: translateY(20px);
+            pointer-events: none;
+        }
+
+    </style>
 <body>
-    <main id="songs-one">
+    <main id="songs-one" style="background-image: url(./images/blurredDubai.png);">
 
 
         
@@ -26,7 +70,7 @@
 
 
         <div id="preloader">
-            <div class="p">See the results of our work.</div>
+            <div class="p">We can boost your company in these ways.</div>
         </div>
 
 <!-- CONTENT -->
@@ -80,13 +124,13 @@
 <div class="song fade-up">
 
     <div class="song-img">
-        <img src="images/album-thumbnail-one.jpg" alt="song">
+        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1772&q=80" alt="song">
     </div>
 
     <div class="song-details">
         <div class="song-details-content">
-        <div class="song-name">Blinding Lights</div>
-        <div class="artist-name">Arlo Brown Ft. Sza</div>
+        <div class="song-name">Copywriting</div>
+        <div class="artist-name">Written content that will get you more attention.</div>
         </div>
         
     </div>
@@ -99,58 +143,42 @@
         <!-- SONG -->
 <div class="song fade-up">
     <div class="song-img">
-        <img src="images/album-thumbnail-two.jpg" alt="song">
+        <img src="https://images.unsplash.com/photo-1579869847557-1f67382cc158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2234&q=80" alt="song">
     </div>
     <div class="song-details">
         <div class="song-details-content">
-        <div class="song-name">KillMonger</div>
-        <div class="artist-name">Arlo Brown Ft. Madhw</div>
+        <div class="song-name">Social Media Marketing</div>
+        <div class="artist-name">Get 2 times more views in 4 weeks</div>
         </div>
 
         
     </div>
 </div>
-    <!-- SONG -->
-
-
-        <!-- SONG -->
 <div class="song fade-up">
-
-
     <div class="song-img">
-        <img src="images/album-thumbnail-five.jpg" alt="song">
+        <img src="https://images.unsplash.com/photo-1591453214154-c95db71dbd83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="song">
     </div>
-
     <div class="song-details">
         <div class="song-details-content">
-        <div class="song-name">Alone</div>
-        <div class="artist-name">Arlo Brown </div>
+        <div class="song-name">High Ticket Sales</div>
+        <div class="artist-name">We'll close the toughest clients for you</div>
         </div>
+
         
     </div>
-    
 </div>
-    <!-- SONG -->
-
-
-
-
-        <!-- SONG -->
 <div class="song fade-up">
-
-
     <div class="song-img">
-        <img src="images/album-thumbnail-four.jpg" alt="song"  data-song="blindinglights" class="play">
+        <img src="https://images.unsplash.com/photo-1607703703674-df96af81dffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="song">
     </div>
-
     <div class="song-details">
         <div class="song-details-content">
-        <div class="song-name">What's Poppin</div>
-        <div class="artist-name">Arlo Brown Ft. Charlie Puth</div>
+        <div class="song-name">Funnel Optimization</div>
+        <div class="artist-name">We'll optimize your funnels</div>
         </div>
+
         
     </div>
-    
 </div>
     <!-- SONG -->
 
@@ -162,13 +190,13 @@
 
 
     <div class="song-img">
-        <img src="images/album-thumbnail-three.jpg" alt="song">
+        <img src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80" alt="song">
     </div>
 
     <div class="song-details">
         <div class="song-details-content">
-        <div class="song-name">The BOX</div>
-        <div class="artist-name">Arlo Brown </div>
+        <div class="song-name">Email services</div>
+        <div class="artist-name">Newsletters, email sequences, email marketing..</div>
         </div>
         
     </div>
@@ -184,13 +212,13 @@
 
 
     <div class="song-img">
-        <img src="images/album-thumbnail-six.jpg" alt="song">
+        <img src="https://images.unsplash.com/photo-1611784728558-6c7d9b409cdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1771&q=80" alt="song">
     </div>
 
     <div class="song-details">
         <div class="song-details-content">
-        <div class="song-name">Shatter</div>
-        <div class="artist-name">Justin Timberlake Ft. Arlo Brown</div>
+        <div class="song-name">Content Creation</div>
+        <div class="artist-name">We'll create content that will rapidly grow your social media</div>
         </div>
         
     </div>
@@ -294,5 +322,21 @@
     <script src="js/bez.js"></script>
     <script src="js/pace.js"></script>
     <script src="js/index.js"></script>
+    <div class="glassmorphic-button" id="glassmorphicButton">
+        <a href="calculator.html">Interested? Go to our calculator!</a>
+    </div>
+
+    <script>
+        // JavaScript to delay and animate the button's appearance
+        document.addEventListener("DOMContentLoaded", function() {
+        const button = document.getElementById("glassmorphicButton");
+        setTimeout(function() {
+            button.style.opacity = "1";
+            button.style.transform = "translateY(0)";
+            button.style.pointerEvents = "auto";
+        }, 7000); // 4 seconds delay
+        });
+
+    </script>
 </body>
 </html>
