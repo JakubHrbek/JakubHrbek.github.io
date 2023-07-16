@@ -69,9 +69,9 @@ COMMON
         }
 
 @font-face {
-            font-family: "camel";
-            src: url('fonts/camel.woff2') format('woff2'),
-            url('fonts/camel.woff') format('woff');
+            font-family: ""Josefin sans"";
+            src: url('fonts/"Josefin sans".woff2') format('woff2'),
+            url('fonts/"Josefin sans".woff') format('woff');
             font-weight: normal;
             font-style: normal;
             }
@@ -321,7 +321,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: camel;
+    font-family: "Josefin sans";
     font-size: 20px;
     z-index: 2;
     opacity: .8;
@@ -366,7 +366,7 @@ a{
     color: rgb(240,240,240,.6);
     font-size: 50px;
     font-weight: 200;
-    font-family: "Roboto";
+    font-family: "Josefin Sans";
     transition: all .4s ease;
     z-index: 3;
     position: relative;
@@ -568,7 +568,7 @@ a{
     text-align: center;
     padding: 50px;
     letter-spacing: auto;
-    padding-top: 80px;
+    padding-top: 25vh;
     z-index: 1;
     opacity: .9;
     font-size: 45px;
@@ -980,7 +980,7 @@ CONTACT ONE
     flex-direction: row;
 }
 #contact-one #contact-form{
-    font-family: camel;
+    font-family: "Josefin sans";
     font-size: 20px;
     width: 55%;
 }
@@ -1005,7 +1005,7 @@ CONTACT ONE
     margin-top: 25px;
     font-size: 18px;
     color: rgb(240,240,240,.8);
-    font-family: camel;
+    font-family: "Josefin sans";
     text-transform: uppercase;
 }
 #contact-one #form textarea{
@@ -1023,7 +1023,7 @@ CONTACT ONE
     padding: 10px 30px;
     font-size: 18px;
     margin: 20px;
-    font-family: camel;
+    font-family: "Josefin sans";
     text-transform: uppercase;
     cursor: pointer;
     transition: all .4s ease;
@@ -1052,7 +1052,7 @@ CONTACT ONE
 }
 #contact-one #collaboration-mail{
     width: 35%;
-    font-family: camel;
+    font-family: "Josefin sans";
     height: auto;
     position: relative;
 }
@@ -1198,7 +1198,7 @@ COMMON
 .heading{
     padding-bottom: 10px;
     padding: 30px;
-    padding-top: 60px;
+    padding-top: 30vh;
     font-size: 24px;
     z-index: 2;
 }
@@ -1339,7 +1339,7 @@ CONTACT-ONE
     flex-direction: column;
 }
 #contact-one #contact-form{
-    font-family: camel;
+    font-family: "Josefin sans";
     font-size: 20px;
     width: 100%;
 }
@@ -1441,7 +1441,7 @@ CONTACT-ONE
     width: 50%;
     }
     #contact-one #contact-form{
-        font-family: camel;
+        font-family: "Josefin sans";
         font-size: 20px;
         width:100%;
     }

@@ -134,14 +134,14 @@
   </style>
 </head>
 <body>
-    <a href="index.html"><img src="images/Sociova-logo.png" id="logo" alt="Sociova Logo"></a>
+  <a href="index.html"><img src="images/Sociova-logo.png" id="logo" alt="Sociova Logo"></a>
   <div class="glassmorphic-container">
     <div class="glassmorphic-content">
       <h1>Calculator</h1>
       <div class="option">
         <i class="fas fa-pencil-alt"></i>
         <span>Copywriting</span>
-        <button class="select-btn" data-price="50">Select</button>
+        <button class="select-btn" data-price="500">Select</button>
         <span class="checkmark">✓</span>
       </div>
       <div class="slider-container">
@@ -152,13 +152,13 @@
           <div class="tier">Hard</div>
           <div class="tier">Expert</div>
         </div>
-        <div class="new-price">New Price: $<span class="service-price">50</span></div>
+        <div class="new-price">New Price: $<span class="service-price">500</span></div>
       </div>
 
       <div class="option">
         <i class="fas fa-chart-line"></i>
         <span>Offer Improvement</span>
-        <button class="select-btn" data-price="30">Select</button>
+        <button class="select-btn" data-price="400">Select</button>
         <span class="checkmark">✓</span>
       </div>
       <div class="slider-container">
@@ -169,15 +169,15 @@
           <div class="tier">Hard</div>
           <div class="tier">Expert</div>
         </div>
-        <div class="new-price">New Price: $<span class="service-price">30</span></div>
+        <div class="new-price">New Price: $<span class="service-price">400</span></div>
       </div>
 
       <!-- Add more options here with different icons and prices -->
       <!-- Repeat the same structure for other services -->
       <div class="option">
         <i class="fas fa-camera"></i>
-        <span>Photography</span>
-        <button class="select-btn" data-price="80">Select</button>
+        <span>Social Media Marketing</span>
+        <button class="select-btn" data-price="2000">Select</button>
         <span class="checkmark">✓</span>
       </div>
       <div class="slider-container">
@@ -188,13 +188,13 @@
           <div class="tier">Hard</div>
           <div class="tier">Expert</div>
         </div>
-        <div class="new-price">New Price: $<span class="service-price">80</span></div>
+        <div class="new-price">New Price: $<span class="service-price">2000</span></div>
       </div>
 
       <div class="option">
         <i class="fas fa-code"></i>
-        <span>Web Development</span>
-        <button class="select-btn" data-price="100">Select</button>
+        <span>High Ticket Sales</span>
+        <button class="select-btn" data-price="500">Select</button>
         <span class="checkmark">✓</span>
       </div>
       <div class="slider-container">
@@ -205,7 +205,7 @@
           <div class="tier">Hard</div>
           <div class="tier">Expert</div>
         </div>
-        <div class="new-price">New Price: $<span class="service-price">100</span></div>
+        <div class="new-price">New Price: $<span class="service-price">500</span></div>
       </div>
 
       <div class="total-price">Total: $<span id="total">0</span></div>
@@ -246,7 +246,7 @@
     function updateNewPrice(index) {
       const complexityValue = parseInt(sliders[index].value);
       const servicePrice = parseInt(selectButtons[index].dataset.price);
-      const newPrice = servicePrice * complexityValue;
+      const newPrice = servicePrice * complexityValue * 1.5;
       servicePrices[index].textContent = newPrice;
     }
   
