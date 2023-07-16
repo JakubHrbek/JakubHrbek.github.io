@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sociova | Calculator</title>
+  <title>Sociova | Pricing Calculator</title>
   <link rel="stylesheet" href="styles.css">
   <!-- Add Font Awesome CSS link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -118,7 +118,7 @@
       cursor: pointer;
     }
 
-    #send-email-btn {
+    #send-email-btn, #go-back-btn {
       margin-top: 20px;
       padding: 10px 20px;
       border: none;
@@ -143,6 +143,13 @@
     #send-email-btn:hover {
       background: rgba(255, 255, 255, 0.518);
     }
+
+    #go-back-btn:hover {
+      color: rgba(43, 43, 43, 0.675);
+      background: rgba(255, 255, 255, 0.518);
+    }
+
+
     @media (max-width: 768px) {
             .glassmorphic-container {
               max-width: 80vw;
@@ -152,9 +159,14 @@
 </head>
 <body>
   <a href="index.html"><img src="images/Sociova-logo.png" id="logo" alt="Sociova Logo"></a>
-  <div class="glassmorphic-container">
+  <div class="glassmorphic-container" style="text-align: center;">
+    
+    <a href="work-one.html" id="go-back-btn">Return to Work page</a>
+
+    <br />
+
     <div class="glassmorphic-content">
-      <h1>Price Calculator</h1>
+      <h1 style="margin-top: 50px;">Price Calculator</h1>
       <p>This calculator is designed to give you a rough idea of how much we charge.</p>
       <div class="option">
         <i class="fas fa-pencil-alt"></i>
