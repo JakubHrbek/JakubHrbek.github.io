@@ -8,25 +8,26 @@
   <!-- Add Font Awesome CSS link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="icon" type="image/png" href="images/Sociova Logo No BG.png">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
   <style>
-    /* Existing styles... */
     body {
       margin: 0;
       padding: 0;
       background: url('https://images.unsplash.com/flagged/photo-1559717201-fbb671ff56b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1771&q=80') no-repeat center center fixed;
       background-size: cover;
-      font-family: Arial, sans-serif;
+      font-family: "Josefin sans";
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
       backdrop-filter: blur(10px); 
-      height: 120vh;
+      height: 170vh;
       background-color: rgb(58, 74, 150);
+      color: aliceblue;
     }
 
     .glassmorphic-container {
-      background: rgba(255, 255, 255, 0.15);
+      background: rgba(106, 106, 106, 0.25);
       border-radius: 15px;
       padding: 20px;
       box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -46,7 +47,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between; /* Space between service name and select button */
-      margin-bottom: 30px; /* Increase the space between options */
+      margin-top: 30px; /* Increase the space between options */
     }
 
     .option i {
@@ -68,10 +69,11 @@
       background: rgba(255, 255, 255, 0.15);
       backdrop-filter: blur(5px);
       border: 1px solid rgba(255, 255, 255, 0.18);
+      transition: 0.3s;
     }
 
     .select-btn:hover {
-      background-color: #FF6347; /* Add hover effect */
+      background: rgba(133, 133, 133, 0.15);
     }
 
     .checkmark {
@@ -98,9 +100,10 @@
     .difficulty-tiers {
       display: flex;
       justify-content: space-around;
-      width: 100%;
+      width: 180%;
       max-width: 300px;
       margin-top: 10px;
+      margin-bottom: 10px;
     }
 
     .tier {
@@ -126,18 +129,33 @@
       background: rgba(255, 255, 255, 0.15);
       backdrop-filter: blur(5px);
       border: 1px solid rgba(255, 255, 255, 0.18);
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    p {
+      text-align: center;
+    }
+    #send-email-btn:hover {
+      color: rgba(43, 43, 43, 0.675);
     }
 
     #send-email-btn:hover {
-      background-color: #45a049;
+      background: rgba(255, 255, 255, 0.518);
     }
+    @media (max-width: 768px) {
+            .glassmorphic-container {
+              max-width: 80vw;
+            }
+        }
   </style>
 </head>
 <body>
   <a href="index.html"><img src="images/Sociova-logo.png" id="logo" alt="Sociova Logo"></a>
   <div class="glassmorphic-container">
     <div class="glassmorphic-content">
-      <h1>Calculator</h1>
+      <h1>Price Calculator</h1>
+      <p>This calculator is designed to give you a rough idea of how much we charge.</p>
       <div class="option">
         <i class="fas fa-pencil-alt"></i>
         <span>Copywriting</span>
@@ -147,10 +165,10 @@
       <div class="slider-container">
         <input type="range" min="1" max="4" value="1" class="slider" data-service="copywriting">
         <div class="difficulty-tiers">
-          <div class="tier">Easy</div>
-          <div class="tier">Medium</div>
-          <div class="tier">Hard</div>
-          <div class="tier">Expert</div>
+          <div class="tier">Simple</div>
+          <div class="tier">Intermediate</div>
+          <div class="tier">Complex</div>
+          <div class="tier">Custom</div>
         </div>
         <div class="new-price">New Price: $<span class="service-price">500</span></div>
       </div>
@@ -164,10 +182,10 @@
       <div class="slider-container">
         <input type="range" min="1" max="4" value="1" class="slider" data-service="offer-improvement">
         <div class="difficulty-tiers">
-          <div class="tier">Easy</div>
-          <div class="tier">Medium</div>
-          <div class="tier">Hard</div>
-          <div class="tier">Expert</div>
+          <div class="tier">Simple</div>
+          <div class="tier">Intermediate</div>
+          <div class="tier">Complex</div>
+          <div class="tier">Custom</div>
         </div>
         <div class="new-price">New Price: $<span class="service-price">400</span></div>
       </div>
@@ -183,33 +201,50 @@
       <div class="slider-container">
         <input type="range" min="1" max="4" value="1" class="slider" data-service="photography">
         <div class="difficulty-tiers">
-          <div class="tier">Easy</div>
-          <div class="tier">Medium</div>
-          <div class="tier">Hard</div>
-          <div class="tier">Expert</div>
+          <div class="tier">Simple</div>
+          <div class="tier">Intermediate</div>
+          <div class="tier">Complex</div>
+          <div class="tier">Custom</div>
         </div>
         <div class="new-price">New Price: $<span class="service-price">2000</span></div>
       </div>
 
       <div class="option">
-        <i class="fas fa-code"></i>
+        <i class="fas fa-laptop"></i>
         <span>High Ticket Sales</span>
         <button class="select-btn" data-price="500">Select</button>
         <span class="checkmark">✓</span>
       </div>
       <div class="slider-container">
-        <input type="range" min="1" max="4" value="1" class="slider" data-service="web-development">
+        <input type="range" min="1" max="4" value="1" class="slider" data-service="high-ticket-sales">
         <div class="difficulty-tiers">
-          <div class="tier">Easy</div>
-          <div class="tier">Medium</div>
-          <div class="tier">Hard</div>
-          <div class="tier">Expert</div>
+          <div class="tier">Simple</div>
+          <div class="tier">Intermediate</div>
+          <div class="tier">Complex</div>
+          <div class="tier">Custom</div>
         </div>
         <div class="new-price">New Price: $<span class="service-price">500</span></div>
       </div>
 
+      <div class="option">
+        <i class="fas fa-code"></i>
+        <span>Web Development</span>
+        <button class="select-btn" data-price="1000">Select</button>
+        <span class="checkmark">✓</span>
+      </div>
+      <div class="slider-container">
+        <input type="range" min="1" max="4" value="1" class="slider" data-service="web-development">
+        <div class="difficulty-tiers">
+          <div class="tier">Simple</div>
+          <div class="tier">Intermediate</div>
+          <div class="tier">Complex</div>
+          <div class="tier">Custom</div>
+        </div>
+        <div class="new-price">New Price: $<span class="service-price">1000</span></div>
+      </div>
+
       <div class="total-price">Total: $<span id="total">0</span></div>
-      <button id="send-email-btn" onclick="sendEmail()">Send Email</button>
+      <a href="contact-one.html" id="send-email-btn">Ok, I'm interested!</a>
     </div>
   </div>
   <script>
@@ -244,11 +279,18 @@
     });
   
     function updateNewPrice(index) {
-      const complexityValue = parseInt(sliders[index].value);
-      const servicePrice = parseInt(selectButtons[index].dataset.price);
-      const newPrice = servicePrice * complexityValue * 1.5;
-      servicePrices[index].textContent = newPrice;
+    const complexityValue = parseInt(sliders[index].value);
+    const servicePrice = parseInt(selectButtons[index].dataset.price);
+    let newPrice;
+
+    if (complexityValue === 4) {
+      newPrice = servicePrice * complexityValue * 1.5 + "+";
+    } else {
+      newPrice = servicePrice * complexityValue * 1.5;
     }
+
+    servicePrices[index].textContent = newPrice;
+  }
   
     function updateTotalPrice() {
       totalPrice = 0;
