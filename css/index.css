@@ -751,7 +751,6 @@ ABOUT ONE
 
 #about-one-content{
     height: auto;
-    background: #080808;
     overflow: hidden;
     width: 100%;
     color: rgb(240,240,240);
@@ -794,11 +793,11 @@ ABOUT ONE
 }
 #about-one .about-text-heading{
     font-size: 34px;
-    text-align: left;
+    text-align: center;
     font-family: poppins;
     font-weight: 200;
     margin: 20px;
-   opacity: .9;
+    opacity: .9;
     padding: 20px;
     margin-top: 40px;
 }
@@ -845,7 +844,7 @@ SONGS ONE
 }
 
 #songs-one #songs-container .song{
-  height: 40vh;
+  height: 38vh;
   width: 275px;
   position: relative;
   margin: 40px auto;
@@ -1204,7 +1203,8 @@ COMMON
 }
 
 #index .new-release{
-    width:190px;
+    width:150px;
+    height: 240px;
 }
 #message{
     font-size: 14px;
@@ -1454,4 +1454,10 @@ CONTACT-ONE
 /*====================================
 CONTACT-ONE
 ====================================*/
+}
+
+@media all and (max-width: 410px) and (min-width: 0px){
+    #songs-one #songs-container .song{
+        height: 42vh;
+      }
 }
