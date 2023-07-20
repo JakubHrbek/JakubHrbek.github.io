@@ -28,6 +28,44 @@
             background-position: center center; /* Center the background image horizontally and vertically */
             filter: blur(50px) brightness(80%);; /* Apply a blur effect to the background image */
         }
+        .p {
+          text-align: center;
+        }
+        .button-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 20vh;
+        }
+
+        .glow-button-red {
+          background-color: #e40d0d;
+          color: #dddddd;
+          border: none;
+          border-radius: 20px;
+          padding: 15px 30px;
+          font-size: 16px;
+          cursor: pointer;
+          transition: transform 0.2s, box-shadow 0.2s;
+          box-shadow: 0 0 0 rgba(255, 4, 4, 0.811);
+          font-family: "Josefin sans";
+        }
+
+        .blue {
+          background-color: rgb(0, 157, 255);
+          box-shadow: 0 0 0 rgba(4, 180, 255, 0.811);
+        }
+
+
+        .glow-button-red:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 5px 10px rgba(255, 0, 0, 0.811);
+        }
+
+        .blue:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 5px 10px rgba(0, 136, 255, 0.811);;
+        }
         @media screen and (max-width: 768px) {
             #new-text {
                 font-size: 30px;
@@ -62,7 +100,7 @@
 
 
         <div id="preloader">
-            <div class="p">All about our incredible agency.</div>
+            <div class="p">All about what we can do for you.</div>
         </div>
 
         <div id="about-one-content">
@@ -118,10 +156,52 @@
      We are an all-in-one business scaling agency focused on results. No matter where you are, we will get you further than you ever thought possible and faster than you could imagine.
     </div>
     <div class="about-text-content  text-scroll">
-      Sociova is here to help your business stand out in the digital era. Our mission is clear: to use our expertise to give your brand a strong presence in the online world. <br> <br>We pride ourselves as an all-in-one scaling agency. Our team of experienced professionals will assist your company with everything from content creation, to high-ticket closing as well as funnel optimization by using frameworks customized for your niche. <br> <br> As the digital economy evolves rapidly, new opportunities come and go. Taking action at the right time is crucial for a business to stay competitive - this is where we step in. <br> <br> Whether you’re a one-person business or a company looking to expand, Sociova will take your brand to the next level. Are you ready to take the next step?
-
+      Stand out as a 6-8 figure business with Sociova. Our mission is clear: to use our skills to unlock the true potential of your entrepreneurship abilities.
+      <br><br>
+      We are an all-in-one scaling agency that provides services in areas such as social media marketing, funnel optimization, and so much more. Our team of experienced professionals will assist your company by unlocking new heights and breaking that barrier between you and your true potential.
+      <br><br>
+      As the digital economy evolves rapidly, new opportunities come and go. Taking action at the right time is crucial for a business to stay competitive. Every second that AI is evolving, many doors are closing, however many doors for opportunities of success are opening. Take action now before it’s too late. 
+      <br><br>
+      Whether you’re a one-person business or a company looking to expand, Sociova will take your brand to the next level. Are you ready to take the next step?
     </div>
     
+   </div>
+</div>
+<br><br><br><br>
+<div class="center">
+  <!-- ABOUT IMG -->
+  <div class="about-img img">
+    <img class="img-parallax" src="./images/whichOne.png" alt="about-img">
+  </div>
+  <!-- ABOUT IMG -->
+</div>
+
+<div class="center">
+  <div class="about-text">
+    <div class="about-text-heading  text-scroll">
+    You could either take the blue pill - Continue to deal with not getting enough clients and money.
+    
+    <br><br>
+
+    OR 
+
+    <br><br>
+
+    Take the red pill - Take the single necessary step to entrepreneurial success.
+
+    <br><br><br><br>
+
+    So. Which one will it be?
+
+    <br><br><br><br>
+
+    <div class="button-container">
+      <a href="contact-one.html" target="_blank"><button class="glow-button-red">The red pill.</button></a>
+    </div>
+    <div class="button-container">
+      <a href="https://www.reddit.com/" target="_blank"><button class="glow-button-red blue">The blue pill.</button></a>
+    </div>
+    </div>
    </div>
 </div>
 
