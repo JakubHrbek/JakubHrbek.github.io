@@ -128,7 +128,7 @@ body{
     font-weight: 200;
     font-family: Josefin sans;
     font-weight: bolder;
-    background: url(../images/dubai.jpeg); /*HEADER BACKGROUND IMAGE*/
+    background: url(https://images.unsplash.com/photo-1550779864-6ccb28702fdb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1771&q=80); /*HEADER BACKGROUND IMAGE*/
     background-position: center;
     background-size: cover;
 }
