@@ -22,6 +22,7 @@
             body {
                 -ms-overflow-style: none;  /* IE and Edge */
                 scrollbar-width: none;  /* Firefox */
+                background-color: white;
             }
             #new-text {
             position: fixed;
@@ -42,7 +43,6 @@
             .blankContainer {
                 height: 100vh;
                 width: 100vw;
-                background-color: rgb(158, 93, 124);
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -51,8 +51,17 @@
                 background: rgb(0, 0, 0);
             }
 
-            .blankContainerWhite {
+            .blankContainerNoFlex {
                 height: 100vh;
+                width: 100vw;
+                z-index: 122;
+                background: rgb(255, 255, 255);
+                overflow-y: hidden;
+                overflow-x: hidden;
+            }
+
+            .blankContainerWhite {
+                height: 140vh;
                 width: 100vw;
                 display: flex;
                 justify-content: center;
@@ -192,16 +201,13 @@
 
         And that's what our team of professionals are here to do for you. <br><br>
 
-        Ready, or still have some questions? <br><br>Schedule a call with us and one of our experts will help you work something out, completely free of charge.
+        Schedule a call with us and one of our experts will help you work something out, completely free of charge.
     </div>
 </div>
 <!-- Calendly inline widget begin -->
 <div class="calendly-inline-widget" data-url="https://calendly.com/sociova/30min?background_color=1a1a1a&text_color=ffffff" style="min-width:320px;height:700px;z-index: 120;"></div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <!-- Calendly inline widget end -->
-<div class="blankContainerWhite">
-    <img src="./images/Sociova Logo New.png" alt="" style="width: 600px; height: auto;">
-</div>
 <!-- HEADER -->
 
 
