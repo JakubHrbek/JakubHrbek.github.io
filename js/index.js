@@ -320,11 +320,6 @@ $(".navigation-content ul li a").hover(function(e) {
           }
     
 
-
-
-
-
-
   //SWIPER ON SONGS PAGE
 
   if(document.querySelector('.swiper-container')){
@@ -352,14 +347,3 @@ $(".navigation-content ul li a").hover(function(e) {
         observeParents: true,
       });
   }
-
-
-
-
-  
- 
-
-
-
-
-
