@@ -125,6 +125,27 @@
             #preloader.hidden {
                 opacity: 0; /* Make the preloader invisible when the "hidden" class is added */
             }
+            
+            /* Add a class for the info box */
+            .info-box {
+                position: absolute;
+                display: none;
+                background-color: black;
+                color: white;
+                padding: 15px;
+                border-radius: 5px;
+                z-index: 1000;
+                max-width: 20vw;
+                margin-top: 5px;
+            }
+
+            /* Style the text inside the info box */
+            .info-box p {
+                margin: 0;
+                font-size: 17px;
+                font-family: "Josefin sans", sans-serif;
+            }
+
         @media screen and (max-width: 768px) {
             .top-navbar {
                 flex-wrap: wrap; /* Allow the menu items to wrap to the next line */
@@ -177,13 +198,49 @@
 <body>
     <nav class="top-navbar">
         <ul>
-            <li><a href="index.html">Copywriting</a></li>
-            <li><a href="about-one.html">SMM</a></li>
-            <li><a href="work.html">High ticket sales</a></li>
-            <li><a href="contact-one.html">Funnel creation</a></li>
-            <li><a href="#">Email services</a></li>
-            <li><a href="#">Content creation</a></li>
-            <li><a href="#">Web developmnet</a></li>
+            <li>
+                <a href="copywriting.html">Copywriting</a>
+                <div class="info-box">
+                    <p>Whether you have been experiencing low or high customer engagement, copywriting is a tried and true tool to attract more attention from clients and then monetise that attention into revenue.</p>
+                </div>
+            </li>
+            <li>
+                <a href="smm.html">SMM</a>
+                <div class="info-box">
+                    <p>Social media marketing is the ultimate way to market in today's world. Our team will provide advanced strategies to develop your account from ground 0 to one of the most influential in your niche. Just sit down and relax, whilst we do all of the work for you.</p>
+                </div>
+            </li>
+            <li>
+                <a href="high-ticket-sales.html">High ticket sales</a>
+                <div class="info-box">
+                    <p>Not sure if you're going to convince that client? We've got you covered. Our high ticket sales team contains experts in psychology and offer creation, so you've got nothing to worry about.</p>
+                </div>
+            </li>
+            <li>
+                <a href="funnel-creation.html">Funnel creation</a>
+                <div class="info-box">
+                    <p>The funnel is the main foundation of the business. If the funnel is not organised, then the business will collapse. Our marketing expertise will craft the 100% most-optimised funnel for specifically your business, that will get you customers flowing in in no time.</p>
+                </div>
+            </li>
+            <li>
+                <a href="email-services.html">Email services</a>
+                <div class="info-box">
+                    <p>Email services from Sociova are straightforward, our team will give you a step-by-step process on how to get set up and from there we will do everything for you, from segmentation to setting up email lists, newsletters and the whole lot.</p>
+                </div>
+            </li>
+            <li>
+                <a href="content-creation.html">Content creation</a>
+                <div class="info-box">
+                    <p>Utilize the skills of professional video, effect, and photo editors to truly bring your business to the next level. At Sociova, we use up-to-date AI technology to massively enhance the quality and quantity of your videos.</p>
+                </div>
+            </li>
+            <li>
+                <a href="web-design-development.html">Web development</a>
+                <div class="info-box">
+                    <p>Have you been experiencing inactivity from specifically your funnels? Do you want to build rapport between you and your customers? Do you want something that is cost-effective, but could be used 24/7 for a worldwide audience? A website is the ultimate solution to that problem.</p>
+                </div>
+            </li>
+            
         </ul>
     </nav>
     <!-- MAIN CONTENT -->
@@ -336,6 +393,33 @@
     <script src="js/bez.js"></script>
     <script src="js/pace.js"></script>
     <script src="js/index.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          // Check if the screen size is larger than 768px (desktop)
+          if (window.matchMedia("(min-width: 769px)").matches) {
+            // Get all list items
+            const listItems = document.querySelectorAll(".top-navbar li");
+      
+            // Add event listeners for hover
+            listItems.forEach((item) => {
+              item.addEventListener("mouseenter", showInfoBox);
+              item.addEventListener("mouseleave", hideInfoBox);
+            });
+      
+            function showInfoBox(event) {
+              const listItem = event.target;
+              const infoBox = listItem.querySelector(".info-box");
+              infoBox.style.display = "block";
+            }
+      
+            function hideInfoBox(event) {
+              const listItem = event.target;
+              const infoBox = listItem.querySelector(".info-box");
+              infoBox.style.display = "none";
+            }
+          }
+        });
+    </script>
     <script>
         // Wait for the page to load
         window.addEventListener('load', function() {
